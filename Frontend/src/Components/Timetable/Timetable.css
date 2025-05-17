@@ -1,0 +1,257 @@
+.timetable-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../../assets/fac-bg3.png");
+  background-size: cover; /* scale image to cover the element */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+}
+
+.timetable-container {
+  display: flex;
+  flex: 1;
+}
+
+.timetable-sidebar {
+  background-color: #013c28;
+  color: white;
+  width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px #013c28;
+  height: 100%;
+}
+
+.timetable-sidebar h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.card button {
+  background-color: white;
+  color: #013c28;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #025d1f;
+  color: white;
+  transition: 0.5s;
+}
+
+.timetable-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+} 
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.timetable-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #013c28;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #013c28;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #013c28;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+  .timetable-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  
+  
+  .btn-generate{
+    background-color: #013c28;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-generate:hover {
+    background-color: #025d1f;
+  }
+  
+  .btn-generate:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .message {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .message.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+  }
+  
+  .message.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+  }
+  
+  .message.info {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    border: 1px solid #90caf9;
+  }
+  
+  .timetable-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #013c28;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .timetable-info h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .timetable-info ul {
+    padding-left: 20px;
+  }
+  
+  .timetable-info li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  
+  .timetable-display {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timetable-scroll {
+    overflow-x: auto;
+  }
+  
+  .timetable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .timetable th,
+  .timetable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .timetable th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+  }
+  
+  .day-cell {
+    font-weight: bold;
+    background-color: #f2f2f2;
+  }
+  
+  .period-time {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .theory-cell {
+    background-color: #e8f5e9;
+  }
+  
+  .lab-cell {
+    background-color: #e3f2fd;
+  }
+  
+  .cell-content {
+    font-size: 12px;
+  }
+  
+  .course-code {
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+  
+  .course-name {
+    margin-bottom: 3px;
+  }
+  
+  .faculty-name,
+  .batch-name {
+    font-size: 11px;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .timetable th,
+    .timetable td {
+      padding: 5px;
+      font-size: 12px;
+    }
+  
+    .cell-content {
+      font-size: 10px;
+    }
+  }
+  
+  

@@ -1,0 +1,55 @@
+.student-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-bottom: solid 1px #013c28;
+  box-shadow: 0px 4px 10px #013c28;
+}
+
+.student-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #013c28;
+}
+
+.student-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.stud-nav-right {
+  list-style: none;
+  display: flex;
+  gap: 5px; /* Reduce the space between Logout and Profile */
+  align-items: center;
+}
+
+.student-nav-links li a,
+.stud-nav-right li a {
+  text-decoration: none;
+  color: #013c28;
+  padding: 10px 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.student-nav-links li a:hover,
+.stud-nav-right li a:hover {
+  background: linear-gradient(90deg, #013c28, #025d1f);
+  color: white;
+  box-shadow: 0 0 10px #013c28;
+}
+
+/* Active Link - Keeps the background static when clicked */
+.student-nav-links li a.active,
+.stud-nav-right li a.active {
+  background: linear-gradient(90deg, #013c28, #025d1f);
+  color: white;
+  box-shadow: 0 0 10px #013c28;
+}

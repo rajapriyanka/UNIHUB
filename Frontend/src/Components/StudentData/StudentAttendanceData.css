@@ -1,0 +1,124 @@
+/* Updated CSS with Green and White Theme */
+.stud-attendance-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../../assets/stud-bg5.jpg");
+    background-size: cover; /* scale image to cover the element */
+    background-position: center; /* center the image */
+    background-repeat: no-repeat;
+}
+
+.stud-attendance-container{
+    padding: 20px;
+}
+
+
+.stud-attendance-header h2 {
+    color: #013c28;
+    text-shadow: 2px 2px 5px #eeffd8;
+    
+}
+
+.stud-semester-filter label {
+    color: #006400;
+    font-weight: bold;
+}
+
+.stud-semester-filter select {
+    /* width: 100%; */
+  padding: 8px;
+  border: 1px solid #013c28;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+  color: #013c28;
+}
+
+.stats-cards {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background-color: #effbef;
+    border-left: 5px solid #025d1f;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 128, 0, 0.2);
+}
+
+.stat-card h3 {
+    color: #025d1f;
+}
+
+.stat-value {
+    font-weight: bold;
+    color: #013c28;
+}
+
+.stud-attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Moved margin-top here */
+}
+
+.stud-attendance-table th,
+.stud-attendance-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.stud-attendance-table th {
+  background-color: #013c28;
+  color: white;
+}
+
+.stud-attendance-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+.stud-attendance-table tr:hover {
+    background-color: #f0fff0;
+}
+
+.stud-attendance-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status-good {
+    background-color: #025d1f;
+    color: white;
+}
+
+.status-warning {
+    background-color: #ffeb3b;
+    color: black;
+}
+
+.status-danger {
+    background-color: #d32f2f;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-cards {
+        flex-direction: column;
+    }
+}
+
+.stud-attendance-info p{
+    color: white;
+    text-shadow: 2px 2px 5px #013c28;
+}

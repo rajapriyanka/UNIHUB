@@ -1,0 +1,477 @@
+.fac-subs-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../../assets/fac-bg3.png");
+  background-size: cover;     /* scale image to cover the element */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+}
+
+.fac-subs-container {
+  display: flex;
+  flex: 1;
+}
+
+.fac-subs-sidebar {
+  background-color: #013c28;
+  color: white;
+  width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px #013c28;
+  height:100%;
+}
+
+.fac-subs-main-content h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.fac-subs-sidebar button {
+  background-color: white;
+  color: #013c28;
+  padding: 20px 30px 20px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.fac-subs-sidebar button:hover {
+  background-color: #025d1f;
+  color: white;
+  transition: 0.5s;
+}
+
+.fac-subs-sidebar button.active {
+  color: #025d1f;
+  font-weight: bold;
+  border-bottom: 2px solid #013c28;
+}
+
+.fac-subs-sidebar button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #025d1f;
+}
+
+.fac-subs-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-sizing: border-box;
+  align-items: center; /* Center the main content */
+}
+
+.fac-subs-main-content {
+  flex-grow: 1;
+  overflow-y: auto; /* Enables vertical scrollbar */
+  padding: 24px;
+  height: 80vh; /* Full height */
+}
+
+.fac-subs-main-content h2{
+  color: #013c28;
+  text-shadow: 2px 2px 5px #eeffd8;
+}
+.request-form {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #013c28;
+  max-width: 90%;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.form-section {
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.form-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.form-section h3 {
+  color: #013c28;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #013c28;
+}
+
+.form-group select,
+.form-group input[type="date"],
+.form-group textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #013c28;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+.filter-options {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.filter-button,
+.submit-button,
+.approve-button,
+.reject-button {
+  background-color: #013c28;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 16px;
+  margin-left: 0;
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover,
+.submit-button:hover,
+.approve-button:hover,
+.reject-button:hover {
+  background-color: #025d1f;
+}
+
+.filter-button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+.faculty-list {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.faculty-list h4 {
+  margin-bottom: 16px;
+  color: #555;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+table th,
+table td {
+  padding: 12px 16px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #013c28;
+  font-weight: 600;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.status-available,
+.status-unavailable {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-available {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-unavailable {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.select-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+}
+
+.select-button:hover {
+  background-color: #388e3c;
+}
+
+.select-button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+.submit-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 14px 24px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.submit-button:hover {
+  background-color: #e64a19;
+}
+
+.submit-button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+.requests-list {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 100%;
+  max-width: 95%;
+  margin-bottom: 24px;
+}
+
+.requests-list h3 {
+  color: #3f51b5;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.requests-list p {
+  margin: 16px 0;
+  color: #666;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status-badge.pending {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.status-badge.approved {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.rejected {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+  margin-top: 0;
+}
+
+.approve-button {
+  background-color: #4caf50;
+  color: white;
+  min-width: 100px;
+  padding: 8px 10px;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.approve-button:hover {
+  background-color: #388e3c;
+}
+
+.reject-button {
+  background-color: #f44336;
+  color: white;
+  min-width: 100px;
+  padding: 8px 10px;
+  margin-left: 0;
+  display: inline-block;
+}
+
+.reject-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Add these styles to your existing CSS file */
+
+.form-text {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 4px;
+  display: block;
+}
+
+.input-error {
+  border: 1px solid #ff3333 !important;
+  background-color: #fff8f8;
+}
+
+/* Ensure toast messages are visible */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  min-height: 50px;
+  padding: 16px;
+}
+
+.Toastify__toast--error {
+  background-color: #ff5252;
+}
+
+.Toastify__toast--warning {
+  background-color: #ffa000;
+}
+
+.Toastify__toast--success {
+  background-color: #4caf50;
+}
+
+/* Styles for the faculty table */
+.faculty-table-container {
+  margin-top: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.faculty-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.faculty-table th {
+  background-color: #013c28;
+  color: white;
+  font-weight: 600;
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.faculty-table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.faculty-table tr:hover {
+  background-color: #f0f0f0;
+}
+
+.faculty-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.select-button.selected {
+  background-color: #ccc;
+  color: white;
+  cursor: default;
+}
+
+/* Specific styles for received requests page */
+.requests-list table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.requests-list table th {
+  padding: 14px 18px;
+  background-color: #013c28;
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  border:1px solid #013c28;
+}
+
+.requests-list table td {
+  padding: 12px 16px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
+}
+
+.requests-list table tr:last-child td {
+  border-bottom: none;
+}
+
+.requests-list table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.requests-list table tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Fix for action buttons in the table */
+.requests-list table td:last-child {
+  min-width: 200px;
+}
+
+/* Make sure both buttons appear side by side */
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}

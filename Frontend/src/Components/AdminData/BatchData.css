@@ -1,0 +1,303 @@
+.batch-data-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../../assets/admin-bg3.webp");
+  background-size: cover;     /* scale image to cover the element */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+  
+}
+
+.batch-data-container {
+  display: flex;
+  flex-direction: row;
+  height: 95vh;
+  align-items: center;
+  
+}
+
+.batch-sidebar {
+  background-color: #013c28;
+  color: white;
+  width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px #013c28;
+  height: 100%;
+}
+
+.batch-sidebar h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.batch-sidebar button {
+  background-color: white;
+  color: #013c28;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.batch-sidebar button:hover {
+  background-color: #025d1f;
+  color: white;
+  transition: 0.5s;
+}
+
+.batch-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.batch-main-content {
+  flex-grow: 1;
+  overflow-y: auto; /* Enables vertical scrollbar */
+  padding: 20px;
+  height: 80vh; /* Full height */
+}
+
+.batch-search-bar {
+  margin-bottom: 20px;
+}
+
+.batch-search-input {
+  width: 95%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #013c28;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.batch-list {
+  margin-top: 0;
+}
+
+.batch-list h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #013c28;
+}
+
+.batch-list table {
+  width: 97%;
+  border-collapse: collapse;
+}
+
+.batch-list th,
+.batch-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+}
+
+.batch-list th {
+  background-color: #013c28;
+  color: white;
+}
+
+.batch-list tr {
+  background-color: #f2f2f261;
+  color: #013c28;
+}
+
+.batch-list .batch-edit-button,
+.batch-list .batch-delete-button {
+  padding: 6px 12px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.batch-list .batch-edit-button {
+  background-color: #013c28;
+  color: white;
+}
+
+.batch-list .batch-edit-button:hover {
+  background-color: #025d1f;
+  color: white;
+}
+
+.batch-list .batch-delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.batch-list .batch-delete-button:hover {
+  background-color: #900c03;
+  color: white;
+}
+
+.register-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 10px #013c28;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.register-form h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+  color: #013c28;
+}
+
+.register-form .form-group {
+  margin-bottom: 16px;
+}
+
+.register-form .form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #013c28;
+}
+
+.register-form .form-group input,
+.register-form .form-group select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #013c28;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+.register-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.register-form .cancel-button,
+.register-form .register-submit-button {
+  background-color: #013c28;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.register-form .cancel-button:hover,
+.register-form .register-submit-button:hover {
+  background-color: #025d1f;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  margin-left: 20px;
+}
+
+.response-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.response-message.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.response-message.error {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Adjust the filter controls layout */
+.filter-controls {
+  display: flex;
+  align-items: baseline; /* Align items in a single row */
+  gap: 5px; /* Reduce the spacing between elements */
+  margin-bottom: 10px; /* Adjust margin to make it more compact */
+}
+
+/* Ensure dropdown and input take up available space */
+.department-select,
+.batch-name-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #013c28;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Ensure the filter button does not have extra spacing */
+.filter-button {
+  background-color: #013c28;
+  color: white;
+  padding: 8px 12px; /* Reduce padding to make the button smaller */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Slightly reduce font size */
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Prevents wrapping */
+  margin-right: 100px;
+}
+
+.filter-button:hover {
+  background-color: #025d1f;
+}
+
+
+.department-select,
+.batch-name-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #013c28;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.filter-button {
+  background-color: #013c28;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #025d1f;
+}
+

@@ -1,0 +1,311 @@
+/* General Layout */
+.fac-data-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../../assets/admin-bg3.webp");
+  background-size: cover;     /* scale image to cover the element */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+  
+}
+
+.fac-data-container {
+  display: flex;
+  flex: 1;
+  
+}
+
+/* Sidebar */
+.fac-sidebar {
+  background-color: #013c28;
+  color: white;
+  width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px #025d1f;
+  height: 100%;
+}
+
+.fac-sidebar h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.fac-sidebar button {
+  background-color: white;
+  color: #013c28;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.fac-sidebar button:hover {
+  background-color: #025d1f;
+  color: white;
+  transition: 0.5s;
+}
+
+/* Main Content */
+.fac-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center; /* Center the main content */
+  
+}
+
+.fac-main-content {
+  flex-grow: 1;
+  overflow-y: auto; /* Enables vertical scrollbar */
+  padding: 20px;
+  height: 80vh; /* Full height */
+}
+
+/* Search Bar */
+.fac-search-bar {
+  margin-bottom: 20px;
+}
+
+.fac-search-input {
+  width: 95%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #013c28;
+  border-radius: 5px;
+}
+
+/* Faculty List */
+.faculty-list {
+  margin-top: 20px;
+}
+
+.faculty-list h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #013c28;
+}
+
+.faculty-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Moved margin-top here */
+}
+
+.faculty-list th,
+.faculty-list td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+}
+
+.faculty-list th {
+  background-color: #013c28;
+  color: white;
+}
+
+
+.faculty-list tr {
+  background-color: #f2f2f261;
+  color: #013c28;
+}
+
+.faculty-list .fac-edit-button,
+.faculty-list .fac-delete-button {
+  padding: 6px 12px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.faculty-list .fac-edit-button {
+  background-color: #013c28;
+  color: white;
+}
+
+.faculty-list .fac-edit-button:hover {
+  background-color: #025d1f;
+  color: white;
+}
+
+.faculty-list .fac-delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.faculty-list .fac-delete-button:hover {
+  background-color: #900c03;
+  color: white;
+}
+
+/*List Faculty Container*/
+.list-faculty-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/*Department Select and Designation Select*/
+.department-select,
+.designation-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #013c28;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+  color: #013c28;
+}
+
+/*Filter Button*/
+.filter-button {
+  background-color: #013c28;
+  color: white;
+  padding: 8px 16px; /* Updated padding */
+  border: none;
+  border-radius: 4px; /* Updated border-radius */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #025d1f;
+}
+
+/*Filter Controls*/
+.fac-filter-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.fac-filter-controls select {
+  flex: 1;
+  min-width: 200px;
+}
+
+.fac-filter-controls button {
+  flex: 0 0 auto;
+}
+
+/* Registration Form */
+.fac-register-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 10px #013c28;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.fac-register-form h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+  color: #013c28;
+}
+
+.fac-register-form .fac-form-group {
+  margin-bottom: 16px;
+}
+
+.fac-register-form .fac-form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #013c28;
+}
+
+/* Ensuring select and input fields have the same width */
+.fac-register-form .fac-form-group select,
+.fac-register-form .fac-form-group input {
+  width: calc(95% - 40px); /* Adjust width to match both inputs and select fields */
+  padding: 10px;
+  border: 1px solid #013c28;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+.fac-register-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.fac-register-form .cancel-button,
+.fac-register-form .register-submit-button {
+  background-color: #013c28;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  margin-left: 120px;
+}
+
+.fac-register-form .cancel-button:hover,
+.fac-register-form .register-submit-button:hover {
+  background-color: #025d1f;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  margin-left: 20px;
+}
+
+.response-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.response-message.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.response-message.error {
+  background-color: #f44336;
+  color: white;
+}
+
+.upload-button {
+  background-color: #013c28;
+  color: white;
+}
+

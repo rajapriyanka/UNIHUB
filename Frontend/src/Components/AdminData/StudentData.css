@@ -1,0 +1,295 @@
+/* General Layout */
+.student-data-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../../assets/admin-bg3.webp");
+  background-size: cover;     /* scale image to cover the element */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+}
+
+.student-data-container {
+  display: flex;
+  flex: 1;
+  
+}
+
+/* Sidebar */
+.student-sidebar {
+  background-color: #013c28;
+  color: white;
+  width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px #013c28;
+  height: 100%;
+}
+
+.student-sidebar h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.student-sidebar button {
+  background-color: white;
+  color: #013c28;
+  padding: 12px 20px;;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.student-sidebar button:hover {
+  background-color: #025d1f;
+  color: white;
+  transition: 0.5s;
+}
+
+/* Main Content */
+.student-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.student-main-content {
+  flex-grow: 1;
+  overflow-y: auto; /* Enables vertical scrollbar */
+  padding: 20px;
+  height: 80vh; /* Full height */
+}
+/* Search Bar */
+.search-input {
+  width: 41%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #013c28;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.department-select,
+.batch-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #013c28;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.filter-button {
+  background-color: #013c28;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #025d1f;
+}
+
+/* Student List */
+.student-list {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.student-list h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #013c28;
+}
+
+.student-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-list th,
+.student-list td {
+  padding: 14px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+}
+
+.student-list th {
+  background-color: #013c28;
+  color: white;
+}
+
+.student-list tr {
+  background-color: #f2f2f261;
+  color: #013c28;
+}
+
+table .stud-list-action-buttons {
+  display: flex;
+  gap: 10px; /* Adjusts space between buttons */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap; /* Prevents wrapping */
+}
+.student-list .stud-edit-button,
+.student-list .stud-delete-button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: inline-block;
+  width: auto;
+  min-width: 60px;
+  text-align: center;
+}
+
+.student-list .stud-edit-button {
+  background-color: #013c28;
+  color: white;
+}
+
+.student-list .stud-edit-button:hover {
+  background-color: #025d1f;
+  color: white;
+}
+
+.student-list .stud-delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.student-list .stud-delete-button:hover {
+  background-color: #900c03;
+  color: white;
+}
+
+/* Registration Form */
+.stud-register-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 10px #013c28;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.stud-register-form h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+  color: #013c28;
+}
+
+.stud-register-form .form-group {
+  margin-bottom: 16px;
+}
+
+.stud-register-form .form-group input,
+.stud-register-form .form-group select {
+  width: calc(95% - 40px);
+  padding: 10px;
+  border: 1px solid #013c28;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.stud-register-form .form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.stud-register-form .cancel-button,
+.stud-register-form .register-submit-button {
+  background-color: #013c28;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  margin-left: 120px;
+}
+
+.stud-register-form .cancel-button:hover,
+.stud-register-form .register-submit-button:hover {
+  background-color: #025d1f;
+}
+
+.upload-button {
+  background-color: #013c28;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.upload-button:hover {
+  background-color: #025d1f;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  margin-left: 20px;
+}
+
+.response-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.response-message.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.response-message.error {
+  background-color: #f44336;
+  color: white;
+}
+.upload-button {
+  background-color: #013c28;
+  color: white;
+  width: 150px;
+}
+

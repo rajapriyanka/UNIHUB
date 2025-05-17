@@ -1,0 +1,25 @@
+.student-dash-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  background-image: url("../../assets/stud-bg5.jpg");
+  background-size: cover; /* scale image to cover the element */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+}
+
+.student-dash-container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.student-dash-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  color: #013c28;
+  text-shadow: 2px 2px 5px #eeffd8;
+}

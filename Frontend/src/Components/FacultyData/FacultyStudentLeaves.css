@@ -1,0 +1,212 @@
+.fac-stud-leave-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../../assets/fac-bg3.png");
+  background-size: cover; /* scale image to cover the element */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+}
+
+.fac-stud-leave-container {
+  display: flex;
+  flex: 1;
+}
+
+.fac-stud-leave-sidebar {
+  background-color: #013c28;
+  color: white;
+  width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px #013c28;
+  height: 100%;
+}
+
+.fac-stud-leave-sidebar h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.fac-stud-leave-sidebar-btns button {
+  background-color: white;
+  color: #013c28;
+  padding: 20px 30px 20px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.fac-stud-leave-sidebar-btns button:hover {
+  background-color: #025d1f;
+  color: white;
+  transition: 0.5s;
+}
+
+.fac-stud-leave-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center; /* Center the main content */
+}
+
+.fac-stud-leave-main-content {
+  flex-grow: 1;
+  overflow-y: auto; /* Enables vertical scrollbar */
+  padding: 20px;
+  height: 80vh; /* Full height */
+}
+.fac-stud-leave-table-container {
+  overflow-x: auto;
+}
+.fac-stud-leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Moved margin-top here */
+}
+
+.fac-stud-leave-table th,
+.fac-stud-leave-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.fac-stud-leave-table th {
+  background-color: #013c28;
+  color: white;
+}
+
+.fac-stud-leave-table-btns .fac-stud-leave-aprove-btn,
+.fac-stud-leave-table-btns .fac-stud-leave-rej-btn {
+  padding: 6px 12px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.fac-stud-leave-table-btns .fac-stud-leave-aprove-btn {
+  background-color: #013c28;
+  color: white;
+}
+
+.fac-stud-leave-table-btns .fac-stud-leave-aprove-btn:hover {
+  background-color: #025d1f;
+  color: white;
+}
+
+.fac-stud-leave-table-btns .fac-stud-leave-rej-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.fac-stud-leave-table-btns .fac-stud-leave-rej-btn:hover {
+  background-color: #900c03;
+  color: white;
+}
+.fac-stud-leave-req-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.fac-stud-leave-req-details .grid {
+  display: grid;
+  gap: 10px;
+}
+
+.fac-stud-leave-req-details .grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fac-stud-leave-req-details p {
+  margin: 0;
+}
+
+.fac-stud-leave-req-details .text-sm {
+  font-size: 14px;
+}
+
+.fac-stud-leave-req-details .font-medium {
+  font-weight: 500;
+  color: #013c28;
+}
+
+.fac-stud-leave-req-details textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+  transition: border 0.3s ease;
+}
+
+.fac-stud-leave-req-details textarea:focus {
+  outline: none;
+  border: 1px solid #025d1f;
+  box-shadow: 0 0 5px rgba(1, 60, 40, 0.2);
+}
+
+.fac-stud-leave-req-details .mt-6 {
+  margin-top: 24px;
+}
+
+.fac-stud-leave-req-details .flex {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.fac-stud-leave-req-details button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.fac-stud-leave-req-details .cancel-btn {
+  background-color: #dc3545;
+  color: white;
+  border: 1px solid #ddd;
+}
+
+.fac-stud-leave-req-details .cancel-btn:hover {
+  background-color: #a71d2a;
+}
+
+.fac-stud-leave-req-details .approve-btn {
+  background-color: #013c28;
+  color: white;
+}
+
+.fac-stud-leave-req-details .approve-btn:hover {
+  background-color: #025d1f;
+}
+
+.fac-stud-leave-req-details .reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.fac-stud-leave-req-details .reject-btn:hover {
+  background-color: #a71d2a;
+}

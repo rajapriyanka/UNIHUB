@@ -1,0 +1,291 @@
+.fac-profile-page {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  background-image: url("../../assets/fac-bg3.png");
+  background-size: cover;     /* scale image to cover the element */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+}
+
+.fac-profile-container {
+  display: flex;
+  flex-direction: row;
+  height: 95vh;
+}
+
+
+.fac-profile-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.fac-profile-main-content {
+  flex-grow: 1;
+  overflow-y: auto; /* Enables vertical scrollbar */
+  padding: 20px;
+  height: 80vh; /* Full height */
+}
+.profile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #013c28;
+    flex-grow: 1;
+    overflow-y: auto; /* Enables vertical scrollbar */
+    padding: 20px;
+    height: 80vh; 
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .user-id {
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #013c28;
+  }
+  
+  .input-group input {
+    width: 90%;
+  padding: 10px;
+  border: 1px solid #013c28;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  }
+
+  .input-group select{
+    width: 90%;
+  padding: 10px;
+  border: 1px solid #013c28;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  }
+  
+  .input-group input:disabled {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+  }
+  
+  .update-button,
+  .edit-button,
+  .close-button,
+  .password-button,
+  .request-otp-button,
+  .change-password-button,
+  .cancel-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  .toggle-password-visibility{
+    background-color: #013c28;
+    color: white;
+    width: 20%;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 1rem;
+  }
+  .update-button {
+    background-color: #013c28;
+    color: white;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .update-button:hover {
+    background-color: #025d1f;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  
+  .close-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .close-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .edit-button {
+    background-color: #013c28;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #025d1f;
+  }
+  
+  .success-message {
+    color: #4caf50;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .error-message {
+    color: #f44336;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .password-button {
+    background-color: #025d1f;
+    color: white;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .password-button:hover {
+    background-color: #013c28;
+  }
+  
+  .password-section {
+    margin-top: 1.5rem;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+  }
+  
+  .password-section h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .request-otp-button {
+    background-color: #013c28;
+    color: white;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .request-otp-button:hover {
+    background-color: #025d1f;
+  }
+  
+  .change-password-button {
+    background-color: #013c28;
+    color: white;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .change-password-button:hover {
+    background-color: #025d1f;
+  }
+  
+  .cancel-button {
+    background-color: #9e9e9e;
+    color: white;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  .cancel-button:hover {
+    background-color: #757575;
+  }
+  
+  .password-requirements {
+    margin-top: 12px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .password-strength-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .password-strength-meter {
+    flex-grow: 1;
+    height: 4px;
+    background-color: #e8e8e8;
+    border-radius: 2px;
+    margin-right: 12px;
+  }
+  
+  .password-strength-bar {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .password-strength-text {
+    margin: 0;
+    font-weight: 500;
+    min-width: 60px;
+    text-align: right;
+  }
+  .validation-error {
+    color: #ff4d4f;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+  
+  .input-error {
+    border-color: #ff4d4f !important;
+  }
+  
+  .input-group {
+    margin-bottom: 16px;
+  }
