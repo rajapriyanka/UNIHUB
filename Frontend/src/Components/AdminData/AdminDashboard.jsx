@@ -46,7 +46,7 @@ const AdminDashboard = () => {
     <div className="admin-dash-page">
       
       <div className="admin-dash-container">
-        <h1>Welcome to the Admin Dashboard</h1>
+        <h1>Welcome to the Admin Dashboard!</h1>
         
         <div className="dashboard-grid">
           {[
