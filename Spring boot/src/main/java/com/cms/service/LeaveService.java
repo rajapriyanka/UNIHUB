@@ -38,7 +38,7 @@ public class LeaveService {
         DEPARTMENT_APPROVER_EMAILS.put("Computer Science and Engineering", "kanmanik135@gmail.com");
         DEPARTMENT_APPROVER_EMAILS.put("Electrical Engineering", "ee.hod@university.edu");
         DEPARTMENT_APPROVER_EMAILS.put("Mechanical Engineering", "me.hod@university.edu");
-        DEPARTMENT_APPROVER_EMAILS.put("Civil Engineering", "ce.hod@university.edu");
+        DEPARTMENT_APPROVER_EMAILS.put("Civil Engineering", "ce.hod@university.com");
         DEPARTMENT_APPROVER_EMAILS.put("Electronics and Communication", "ece.hod@university.edu");
         DEPARTMENT_APPROVER_EMAILS.put("Information Technology", "it.hod@university.edu");
         DEPARTMENT_APPROVER_EMAILS.put("Aeronautical Engineering", "aero.hod@university.edu");
