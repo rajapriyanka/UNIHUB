@@ -200,7 +200,7 @@ const FacultyCourse = () => {
                 </div>
               )}
 
-              <label>Select Course:</label>
+              <label>Select Course</label>
               <select
                 value={selectedCourseId}
                 onChange={(e) => setSelectedCourseId(e.target.value)}
