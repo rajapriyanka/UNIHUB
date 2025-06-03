@@ -291,7 +291,7 @@ const BatchData = () => {
               {isLoading ? (
                 <p>Loading...</p>
               ) : batches.length === 0 ? (
-                <p>No batch data available.</p>
+                <p>No batch data available..</p>
               ) : (
                 <table>
                   <thead>
