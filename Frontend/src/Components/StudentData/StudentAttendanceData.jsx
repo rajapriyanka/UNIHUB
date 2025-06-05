@@ -158,7 +158,7 @@ const StudentAttendanceData = () => {
               <div className="stat-card">
                 <div className="stat-icon good-icon">✓</div>
                 <div className="stat-content">
-                  <h3>Good Standing Attendance</h3>
+                  <h3>Good Standing </h3>
                   <p className="stat-value">{courseStats.good} Courses</p>
                 </div>
               </div>
