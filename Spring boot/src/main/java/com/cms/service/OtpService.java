@@ -56,7 +56,7 @@ public class OtpService {
      */
     private String generateRandomOtp() {
         SecureRandom random = new SecureRandom();
-        int otp = 100000 + random.nextInt(900000); // 6-digit OTP
+        int otp = 100000 + random.nextInt(800000); // 6-digit OTP
         return String.valueOf(otp);
     }
     
