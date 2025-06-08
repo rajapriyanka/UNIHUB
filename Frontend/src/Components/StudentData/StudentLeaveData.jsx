@@ -282,7 +282,7 @@ const StudentLeaveData = () => {
         <div className="stud-leave-main-content">
           {activeTab === "request" ? (
             <div className="stud-leave-form">
-              <h2>Student Leave Request Form</h2>
+              <h2> Leave Request Form</h2>
               <form onSubmit={handleSubmit}>
                 <div className="space-y-4 mt-4">
                   <div className="form-group">
