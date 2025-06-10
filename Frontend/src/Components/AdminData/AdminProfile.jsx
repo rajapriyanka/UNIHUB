@@ -392,7 +392,7 @@ const AdminProfile = () => {
                   />
                 </div>
 
-                <p className="info-text">Enter your admin email address and the new username you want to use.</p>
+                <p className="info-text">Enter your admin email address and the new email you want to use.</p>
 
                 <button type="submit" className="change-username-button">
                   Change Username
