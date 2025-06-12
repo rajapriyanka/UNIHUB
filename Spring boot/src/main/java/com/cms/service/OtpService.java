@@ -14,7 +14,7 @@ public class OtpService {
     private final Map<String, OtpData> otpMap = new HashMap<>();
     
     // OTP expiration time in minutes
-    private static final int OTP_EXPIRY_MINUTES = 2;
+    private static final int OTP_EXPIRY_MINUTES = 1;
     
     /**
      * Generate a new OTP for the given email
