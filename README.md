@@ -100,7 +100,7 @@ npm start
 
 ## 👩‍💻 Author
 
-- **Raja Priyanka R**
+- **Rajapriyanka R**
 - 💼 [LinkedIn](https://www.linkedin.com/in/rajapriyankar/)
 - 📧 rajapriyanka1101@gmail.com
 
