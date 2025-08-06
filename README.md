@@ -45,7 +45,8 @@ UNIHUB/
 > Replace the placeholders below with actual links once images are uploaded in `CMS - Snapshots/`.
 
 ### 🔐 Login Page
-![Login](https://raw.githubusercontent.com/rajapriyanka/UNIHUB/main/CMS%20-%20Snapshots/login.png)
+![Login]<img width="1920" height="1080" alt="Admin login" src="https://github.com/user-attachments/assets/945b1b04-5c81-4425-8537-d9256daa91f4" />
+
 
 ### 📊 Admin Dashboard
 ![Dashboard](https://raw.githubusercontent.com/rajapriyanka/UNIHUB/main/CMS%20-%20Snapshots/dashboard.png)
