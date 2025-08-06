@@ -45,7 +45,7 @@ UNIHUB/
 Below are the key screens of the UNIHUB system (add raw GitHub URLs once available):
 
 ### 🔐 Admin Login
-![Admin Login](<img width="1920" height="1080" alt="Admin login" src="https://github.com/user-attachments/assets/feb6b38f-9d05-4db0-9f03-9c6fca85ecd0" />)
+![Admin Login]<img width="1920" height="1080" alt="Admin login" src="https://github.com/user-attachments/assets/feb6b38f-9d05-4db0-9f03-9c6fca85ecd0" />
 
 
 ### 👤 Admin Profile Management
