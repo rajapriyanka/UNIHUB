@@ -42,17 +42,28 @@ UNIHUB/
 
 ## 🖼️ Screenshots
 
-> Replace the placeholders below with actual links once images are uploaded in `CMS - Snapshots/`.
+Below are the key screens of the UNIHUB system (add raw GitHub URLs once available):
 
-### 🔐 Login Page
-![Login]<img width="1920" height="1080" alt="Admin login" src="https://github.com/user-attachments/assets/945b1b04-5c81-4425-8537-d9256daa91f4" />
+### 🔐 Admin Login
+![Admin Login](https://raw.githubusercontent.com/rajapriyanka/UNIHUB/main/CMS%20-%20Snapshots/admin-login.png)
 
+### 👤 Admin Profile Management
+![Admin Profile](https://raw.githubusercontent.com/rajapriyanka/UNIHUB/main/CMS%20-%20Snapshots/admin-profile.png)
 
-### 📊 Admin Dashboard
-![Dashboard](https://raw.githubusercontent.com/rajapriyanka/UNIHUB/main/CMS%20-%20Snapshots/dashboard.png)
+### 🔑 Admin Reset Password
+![Reset Password](https://raw.githubusercontent.com/rajapriyanka/UNIHUB/main/CMS%20-%20Snapshots/admin-reset-password.png)
 
-### 📁 CMS Upload Page
-![CMS Upload](https://raw.githubusercontent.com/rajapriyanka/UNIHUB/main/CMS%20-%20Snapshots/cms-upload.png)
+### 🔁 Faculty Request Substitute
+![Faculty Request Substitute](https://raw.githubusercontent.com/rajapriyanka/UNIHUB/main/CMS%20-%20Snapshots/faculty-request-substitute.png)
+
+### 📬 Faculty Substitute Requests
+![Faculty Substitute Requests](https://raw.githubusercontent.com/rajapriyanka/UNIHUB/main/CMS%20-%20Snapshots/faculty-substitute-requests.png)
+
+### 📤 Faculty – Upload Attendance
+![Attendance Upload](https://raw.githubusercontent.com/rajapriyanka/UNIHUB/main/CMS%20-%20Snapshots/faculty-upload-attendance.png)
+
+### 👨‍🎓 Student – View Attendance
+![View Attendance](https://raw.githubusercontent.com/rajapriyanka/UNIHUB/main/CMS%20-%20Snapshots/student-view-attendance.png)
 
 ---
 
