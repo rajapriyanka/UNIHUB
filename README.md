@@ -22,10 +22,13 @@ UNIHUB/
 
 - 🔐 **User Authentication** (Login system)
 - 🧑‍🏫 **Role-based Access** (Admin, Faculty, Student)
-- 📅 **Timetable and Leave Management**
-- 📝 **Course and Exam Module**
-- 📤 **CMS Functionality** (Upload notices, materials)
-- 📊 **Dashboard with Analytics**
+- 📅 **Timetable and Leave Management** with Substitute Management
+- 🛠️ **Course Management** by Admin
+- 🧾 **Batch Management** by Admin
+- 📩 **Faculty Leave Management** with email notification and substitute handling
+- 📤 **Faculty Attendance Upload** (Daily or Period-wise)
+- 👨‍🎓 **Student Features**: View Attendance, Apply Leave, and View Timetable
+
 
 ---
 
