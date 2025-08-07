@@ -1,7 +1,7 @@
 
 # UNIHUB 🎓
 
-**UNIHUB** is a university management platform designed to streamline academic processes including content management, student-faculty interaction, and admin tasks. Built using Spring Boot for the backend and a modern frontend stack, the project aims to provide an efficient and intuitive experience for all university stakeholders.
+**UNIHUB** is a university management platform designed to streamline academic processes including content management, student-faculty interaction and admin tasks. Built using Spring Boot for the backend and a modern frontend stack, the project aims to provide an efficient and intuitive experience for all university stakeholders.
 
 ---
 
